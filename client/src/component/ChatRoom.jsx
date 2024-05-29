@@ -47,7 +47,7 @@ const ChatRoom = ({ privateChats, setPrivateChats, tab }) => {
     event.preventDefault();
 
     if (userData.username.trim()) {
-      const socket = new SockJS("http://192.168.40.141:8080/ws");
+      const socket = new SockJS("http://192.168.40.101:8080/ws");
       stompClient = Stomp.over(socket);
       setConnecting(true);
 

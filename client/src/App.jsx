@@ -14,7 +14,7 @@ function App() {
         setPrivateChats={setPrivateChats}
         tab={tab}
       />
-      <SidePanel privateChats={privateChats} tab={tab} setTab={setTab} />
+      {/* <SidePanel privateChats={privateChats} tab={tab} setTab={setTab} /> */}
     </div>
   );
 }
