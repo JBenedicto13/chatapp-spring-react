@@ -3,6 +3,7 @@ import SockJS from "sockjs-client/dist/sockjs";
 import Stomp from "stompjs";
 import GetTime from "../utils/GetCurrentTimeFormatted";
 import GetSimplifiedTime from "../utils/GetSimplifiedTimeFormat";
+import { config } from "../utils/config";
 
 const colors = [
   "#2196F3",
@@ -47,7 +48,7 @@ const ChatRoom = ({ privateChats, setPrivateChats, tab }) => {
     event.preventDefault();
 
     if (userData.username.trim()) {
-      const socket = new SockJS("http://192.168.40.101:8080/ws");
+      const socket = new SockJS(`http://${config.host_ip_address}:8080/ws`);
       stompClient = Stomp.over(socket);
       setConnecting(true);
 
