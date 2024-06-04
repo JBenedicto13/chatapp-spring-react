@@ -230,7 +230,7 @@ const ChatRoom = ({ privateChats, setPrivateChats, tab }) => {
 
       <div className="chat-room" hidden={!isConnected}>
         <div className="room-header text-center border-b-slate-400 border-b-2 p-3">
-          <h1 className=" text-3xl">TSUKIDEN CHAT ROOM</h1>
+          <h1 className=" text-3xl">CHAT ROOM</h1>
         </div>
         <div className="room-body">
           <div
